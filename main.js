@@ -1,6 +1,7 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read){
+class Book {
+  constructor (title, author, pages, read){
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -8,6 +9,7 @@ function Book(title, author, pages, read){
     this.info = function (){
         console.log(title + ', escrito por ' + author + 'tiene ' + pages + ', ' + read)
     }
+}
 }
 
 Book.prototype.toggleRead = function () {
